@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>画像の表示</title>
-    
-    </head>
+    <style>
+        /* * ページ全体の余白をなくします
+         */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* * 画像を画面幅に収めるための設定
+         */
+        .responsive-image {
+            /* 画像の最大幅を画面の幅(100%)までに制限します */
+            max-width: 100%;
+            
+            /* 高さは幅に合わせて自動調整します */
+            height: auto; 
+            
+            /* * display: block; を指定しないと、
+             * 画像の下にわずかな隙間ができるのを防ぎます
+             */
+            display: block;
+        }
+    </style>
+</head>
 <body>
 
-    <img src="IMG_0418.jpg" alt="表示したい画像">
+    <img src="IMG_0418.jpg" alt="表示したい画像" class="responsive-image">
 
 </body>
 </html>
